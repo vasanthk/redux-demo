@@ -1,0 +1,24 @@
+{
+  "name": "redux-demo",
+  "version": "1.0.0",
+  "description": "Playing around with redux.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vasanthk/redux-demo.git"
+  },
+  "author": "Vasanth Krishnamoorthy (http://www.vasanthk.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasanthk/redux-demo/issues"
+  },
+  "homepage": "https://github.com/vasanthk/redux-demo",
+  "dependencies": {
+    "react-redux": "^0.8.2",
+    "redux": "^1.0.0-rc",
+    "redux-devtools": "^0.2.0"
+  }
+}
