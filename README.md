@@ -1,5 +1,5 @@
 # Redux Demo
-Playing around with redux.
+Playing around with [redux](https://github.com/rackt/redux).
 
 > Predictable state container for JavaScript apps
 
