@@ -9,7 +9,7 @@ Playing around with [redux](https://github.com/rackt/redux).
 
 ### Main Principles
 
-* The state of youer whole application is stored in an object tree inside a single store.
+* The state of your whole application is stored in an object tree inside a single store.
 
 * State is read-only. The only way to mutate the state is to emit an action, an object describing what happened.
 
