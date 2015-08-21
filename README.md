@@ -37,7 +37,7 @@ Things you **should never** do inside a reducer:
 
 * Perform side effects like API calls and routing transitions.
 
-Given the same arguments, it should calculate the next state and return it. No surprises. No side effects. No API calls. No mutations. Just a calculation.
+**Given the same arguments, it should calculate the next state and return it. No surprises. No side effects. No API calls. No mutations. Just a calculation.**
 
 ### Reference
 
