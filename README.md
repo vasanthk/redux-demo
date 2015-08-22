@@ -39,6 +39,10 @@ Things you **should never** do inside a reducer:
 
 **Given the same arguments, it should calculate the next state and return it. No surprises. No side effects. No API calls. No mutations. Just a calculation.**
 
+When the app is larger, we can split the reducers into separate files and keep them completely independent and managing different data domains. 
+
+Redux provides an utility called combineReducers() that generate a function that calls your reducers with the slices of state selected according to their keys, and combining their results into a single object again. 
+
 ### Reference
 
 [Concept of Mutations](http://skilldrick.co.uk/2010/12/clearing-up-the-confusion-around-javascript-references/)
