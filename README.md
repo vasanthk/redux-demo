@@ -41,7 +41,22 @@ Things you **should never** do inside a reducer:
 
 When the app is larger, we can split the reducers into separate files and keep them completely independent and managing different data domains. 
 
-Redux provides an utility called combineReducers() that generate a function that calls your reducers with the slices of state selected according to their keys, and combining their results into a single object again. 
+Redux provides an utility called combineReducers() that generate a function that calls your reducers with the slices of state selected according to their keys, and combining their results into a single object again.
+ 
+### Store
+
+Actions represent the facts about 'what happened' and reducers update the state according to those actions.
+
+The Store is the object that brings them together. 
+
+The store has the following responsibilities:
+
+* Holds application state;
+* Allows access to state via getState();
+* Allows state to be updated via dispatch(action);
+* Registers listeners via subscribe(listener)
+
+It’s important to note that you’ll only have a single store in a Redux application. When you want to split your data handling logic, you’ll use reducer composition instead of many stores.
 
 ### Reference
 
