@@ -71,6 +71,12 @@ let store = createStore(todoApp);
 
 Redux architecture revolves around a strictly unidirectional data flow.
 
+The data lifecycle in a Redux app follows these 4 steps:
+* You call store.dispatch(action)
+* The Redux store calls the reducer function you gave it.
+* The root reducer might combine the output of multiple reducers into a single tree.
+* The Redux store saves the complete state tree retruned by the root reducer.
+
 
 ### Reference
 
