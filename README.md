@@ -67,6 +67,11 @@ import todoApp from './reducers';
 let store = createStore(todoApp);
 ```
 
+### Data Flow
+
+Redux architecture revolves around a strictly unidirectional data flow.
+
+
 ### Reference
 
 [Concept of Mutations](http://skilldrick.co.uk/2010/12/clearing-up-the-confusion-around-javascript-references/)
