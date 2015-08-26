@@ -83,7 +83,14 @@ React bindings are not included in Redux by default. It's available as 'react-re
 
 It is advisable only  top-level components of your app (such as route handlers) are aware of Redux. Components below them should be "dumb" and receive all data via props.
 
+**Connecting to Redux**
 
+* First we need to import 'Provider' from 'react-redux' and wrap the root component around <Provider> before rendering. This makes our store instance available to the components below.
+* Then we wrap the components we want to connect to Redux with the connect() function from react-redux. Try to only do this for top-level component or route handlers.
+
+Any component wrapped with the connect call with receive a 'dispatch' fucntion as a prop, and any state it needs form the global state.
+
+The only argument to connect() is a function we call a 'selector'. This function takes the global Redux store's state, and returns the props you need for the component. In the simplest case, you can just return the state given to you, but you may wish to transform it first.
 
 ### Reference
 
