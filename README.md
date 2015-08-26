@@ -77,6 +77,13 @@ The data lifecycle in a Redux app follows these 4 steps:
 * The root reducer might combine the output of multiple reducers into a single tree.
 * The Redux store saves the complete state tree retruned by the root reducer.
 
+### Usage with React
+
+React bindings are not included in Redux by default. It's available as 'react-redux' on npm and needs to be installed separately.
+
+It is advisable only  top-level components of your app (such as route handlers) are aware of Redux. Components below them should be "dumb" and receive all data via props.
+
+
 
 ### Reference
 
