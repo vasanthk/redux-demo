@@ -25,7 +25,7 @@ class Counter extends Component {
 const increaseAction = {type: 'increase'};
 
 // Reducer
-function counter(state = {count: 0}, action={type: 'increase'}) {
+function counter(state = {count: 0}, action = {type: ''}) {
   let count = state.count;
   switch (action.type) {
     case 'increase':
