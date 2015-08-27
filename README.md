@@ -1,5 +1,6 @@
 # Redux Demo
-Playing around with [redux](https://github.com/rackt/redux).
+Simple Demo of [Redux](https://github.com/rackt/redux).
+Code from [here](https://github.com/jackielii/simplest-redux-example)
 
 > Predictable state container for JavaScript apps
 
@@ -75,7 +76,7 @@ The data lifecycle in a Redux app follows these 4 steps:
 * You call store.dispatch(action)
 * The Redux store calls the reducer function you gave it.
 * The root reducer might combine the output of multiple reducers into a single tree.
-* The Redux store saves the complete state tree retruned by the root reducer.
+* The Redux store saves the complete state tree returned by the root reducer.
 
 ### Usage with React
 
