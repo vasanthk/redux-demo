@@ -13,6 +13,8 @@ To run this Demo
 
 * Open [http://localhost:5000/](http://localhost:5000/) in the browser.
 
+# Summary notes of the [docs](http://rackt.github.io/redux/)
+
 ## The Gist
 
 > The whole state of your app is stored in an object tree inside a single store. The only way to change the state tree is to emit an action, an object describing what happened. To specify how the state tree is transformed by the actions, you write pure reducers.
@@ -101,6 +103,12 @@ It is advisable only  top-level components of your app (such as route handlers) 
 Any component wrapped with the connect call with receive a 'dispatch' function as a prop, and any state it needs from the global state.
 
 The only argument to connect() is a function we call a 'selector'. This function takes the global Redux store's state, and returns the props you need for the component. In the simplest case, you can just return the state given to you, but you may wish to transform it first.
+
+### Middleware
+
+If you've used server-side libraries like Express and Koa, you are familiar with the concept of middleware. In these frameworks, middleware is some code you can put between the framework receiving a request, and framework generating a response.
+ 
+Redux middleware provides a third-party extension point between dispatching an action, and the moment it reaches the store. People use Redux middleware for logging, crash reporting, talking to an asynchronous API, routing, and more. 
 
 ### Reference
 
