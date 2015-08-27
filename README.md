@@ -1,8 +1,17 @@
 # Redux Demo
+
+> Predictable state container for JavaScript apps
+
 Simple Demo of [Redux](https://github.com/rackt/redux).
 Code from [here](https://github.com/jackielii/simplest-redux-example)
 
-> Predictable state container for JavaScript apps
+To run this Demo
+
+* `npm install`
+
+* `npm start`
+
+* Open [http://localhost:5000/](http://localhost:5000/) in the browser.
 
 ## The Gist
 
