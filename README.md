@@ -108,7 +108,17 @@ The only argument to connect() is a function we call a 'selector'. This function
 
 If you've used server-side libraries like Express and Koa, you are familiar with the concept of middleware. In these frameworks, middleware is some code you can put between the framework receiving a request, and framework generating a response.
  
-Redux middleware provides a third-party extension point between dispatching an action, and the moment it reaches the store. People use Redux middleware for logging, crash reporting, talking to an asynchronous API, routing, and more. 
+Redux middleware provides a third-party extension point between dispatching an action, and the moment it reaches the store. People use Redux middleware for logging, crash reporting, talking to an asynchronous API, routing, and more.
+ 
+### Async Actions
+ 
+Even if you call an asynchronous API, you need to dispatch actions to change the stored data, and they will be processed by reducers synchronously. 
+
+Usually, for any API request you'll want to dispatch at least three different kinds of actions:
+ 
+* An action informing the reducers that the request began.
+* An action informing the reducers that the request finished succesffully.
+* An action informing the reducers that the request failed. 
 
 ### Reference
 
