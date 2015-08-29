@@ -118,7 +118,13 @@ Usually, for any API request you'll want to dispatch at least three different ki
  
 * An action informing the reducers that the request began.
 * An action informing the reducers that the request finished succesffully.
-* An action informing the reducers that the request failed. 
+* An action informing the reducers that the request failed.
+ 
+### Async Flow
+ 
+Without middleware, Redux store only supports synchronous data flow. This is what you get by default with createStore().
+
+You may enhance createStore() with applyMiddleware(). It is not required, but it lets you express asynchronous actions in a convenient way. 
 
 ### Reference
 
