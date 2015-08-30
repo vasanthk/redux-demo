@@ -136,8 +136,8 @@ When the last middleware in the chain dispatches an action, it has to be a plain
 * This allows you to gradually rewrite every Flux Store in your app as a reducer, but still export `createFluxStore(reducer)` so the rest of your app is not aware that this is happening and sees the Flux stores.
 * As you rewrite your Stores, you will find that you need to avoid certain `Flux anti-patterns such as fetching API inside the Store, or triggering actions inside the Stores.` Your Flux code will be easier to follow once you port it to be based on reducers!
 * When you have ported all of your Flux Stores to be implemented on top of reducers, you can replace the Flux library with a single Redux store, and combine those redicers you already have into one using `combineReducers(reducers)`.
-* Now all that's ;eft to do is port the UI to use `react-redux` or equivalent.
-* FInally, you might want to begin using some Redux idioms like middleware to further simplify your asynchronous code.
+* Now all that's left to do is port the UI to use `react-redux` or equivalent.
+* Finally, you might want to begin using some Redux idioms like middleware to further simplify your asynchronous code.
 
 ### Reference
 
