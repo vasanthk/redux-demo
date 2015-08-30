@@ -143,3 +143,5 @@ When the last middleware in the chain dispatches an action, it has to be a plain
 
 [Concept of Mutations](http://skilldrick.co.uk/2010/12/clearing-up-the-confusion-around-javascript-references/)
 
+[Redux Middleware: Behind the scenes](http://briantroncone.com/?p=529#)
+
