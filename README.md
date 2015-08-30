@@ -130,6 +130,15 @@ Asynchronous middleware like redux-thunk or redux-promise wraps the store’s di
 
 When the last middleware in the chain dispatches an action, it has to be a plain object. This is when the synchronous Redux data flow takes place.
 
+### Migrating to Redux from Flux
+
+* Create a function called `CreateFluxStore(reducer)` that creates a Flux store compatible with your existing app from a reducer function. Internally it might look similar to `createStore` implementation from Redux. Its dispatcher handler should just call the reducer for any action. store the next state, and emit change.
+* This allows you to gradually rewrite every Flux Store in your app as a reducer, but still export `createFluxStore(reducer)` so the rest of your app is not aware that this is happening and sees the Flux stores.
+* As you rewrite your Stores, you will find that you need to avoid certain `Flux anti-patterns such as fetching API inside the Store, or triggering actions inside the Stores.` Your Flux code will be easier to follow once you port it to be based on reducers!
+* When you have ported all of your Flux Stores to be implemented on top of reducers, you can replace the Flux library with a single Redux store, and combine those redicers you already have into one using `combineReducers(reducers)`.
+* Now all that's ;eft to do is port the UI to use `react-redux` or equivalent.
+* FInally, you might want to begin using some Redux idioms like middleware to further simplify your asynchronous code.
+
 ### Reference
 
 [Concept of Mutations](http://skilldrick.co.uk/2010/12/clearing-up-the-confusion-around-javascript-references/)
