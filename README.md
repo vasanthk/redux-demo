@@ -2,6 +2,10 @@
 
 > Predictable state container for JavaScript apps
 
+Redux makes you think of your application as an initial state being modified by a sequential list of actions, which I found is a really nice way to approach complex web apps and opens up a lot of opportunities.
+
+Hence, Redux enables tools like logging, hot reloading, time travel, record and replay with no extra work from the developer which makes working on a Redux app really fun and easy ! It also means we can implement complex features like undo/redo really easily. 
+
 Simple Demo of [Redux](https://github.com/rackt/redux).
 Code from [here](https://github.com/jackielii/simplest-redux-example)
 
