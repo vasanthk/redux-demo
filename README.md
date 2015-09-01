@@ -23,6 +23,8 @@ To run this Demo
 
 > The whole state of your app is stored in an object tree inside a single store. The only way to change the state tree is to emit an action, an object describing what happened. To specify how the state tree is transformed by the actions, you write pure reducers.
 
+It embraces an idea currently bubbling up in the UI community: make state explicit and immutable, use pure functions as much as possible, and push all side effects to the edge of your app. In fact, the entire state exists as a single atom: a deeply nested JS object that contains everything you need to render the current UI.
+
 ## Main Principles
 
 * The state of your whole application is stored in an object tree inside a single store.
