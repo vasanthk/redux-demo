@@ -155,3 +155,5 @@ When the last middleware in the chain dispatches an action, it has to be a plain
 
 [Redux Middleware: Behind the scenes](http://briantroncone.com/?p=529#)
 
+[Pure functions](http://www.sitepoint.com/functional-programming-pure-functions/)
+
