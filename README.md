@@ -25,7 +25,7 @@ To run this Demo
 
 It embraces an idea currently bubbling up in the UI community: make state explicit and immutable, use pure functions as much as possible, and push all side effects to the edge of your app. In fact, the entire state exists as a single atom: a deeply nested JS object that contains everything you need to render the current UI.
 
-The library has roots in Flux, Facebooks original library for handling state. The main similarity is you dispatch actions to change state. An action is simply a JavaScript object with a type field and any other fields as arguments. These actions are dispatched across all registered "reducers", which are pure functions that take state and an action and return new state: (state, action) -> newState. All new states are grouped together into a new single atom app state.
+The library has roots in Flux, Facebook's original library for handling state. The main similarity is you dispatch actions to change state. An action is simply a JavaScript object with a type field and any other fields as arguments. These actions are dispatched across all registered "reducers", which are pure functions that take state and an action and return new state: (state, action) -> newState. All new states are grouped together into a new single atom app state.
 
 You can't use pure functions and a global app state atom for everything. Asynchronous code is inherently side-effecting, but by isolating it to a specific part of your app, the rest of the world doesn't have to be bothered with things such as promises or observables. Updating the app state and rendering the UI is completely synchronous, but "async action creators" are functions which have the ability to dispatch multiple actions over time.
 
